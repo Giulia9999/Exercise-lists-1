@@ -5,9 +5,14 @@ import java.util.List;
 
 public class Main {
     public static void main(String[] args){
-        List<String> cityList = new ArrayList<>(Arrays.asList("Roma", "Bari", "Catania"));
-        List<String> unmodifiableList = Collections.unmodifiableList(cityList);
-        unmodifiableList.add("Milano");
+        List<String> unmutableList = appendOne(Arrays.asList("Catania", "Roma", "Bari"), "Milano");
+        System.out.println(unmutableList);
+
     }
 
+    public static List<String> appendOne(List<String> listCity, String newCity){
+        List<String> unmutableList = new ArrayList<>(listCity);
+        unmutableList.add(newCity);
+        return Collections.unmodifiableList(unmutableList);
+    }
 }
