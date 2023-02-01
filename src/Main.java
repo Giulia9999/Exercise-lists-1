@@ -15,6 +15,9 @@ public class Main {
 
         List <String> kingsOfRome = new ArrayList<>();
         kingsOfRome.addAll(Arrays.asList("Romulus", "Numa Pompilius", "Tullus Hostilius", "Ancus Marcius", "Lucius Taquinius", "Servius Tullius", "Lucius Superbus"));
+        System.out.println(kingsOfRome);
+        String[] kingsOfRomeArray = kingsOfRome.toArray(new String[0]);
+
     }
 
     public static List<String> appendOne(List<String> listCity, String newCity){
