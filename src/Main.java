@@ -14,6 +14,7 @@ public class Main {
         System.out.println(immutableList);
 
         List <String> kingsOfRome = new ArrayList<>();
+        kingsOfRome.addAll(Arrays.asList("Romulus", "Numa Pompilius", "Tullus Hostilius", "Ancus Marcius", "Lucius Taquinius", "Servius Tullius", "Lucius Superbus"));
     }
 
     public static List<String> appendOne(List<String> listCity, String newCity){
