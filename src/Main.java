@@ -17,6 +17,8 @@ public class Main {
         kingsOfRome.addAll(Arrays.asList("Romulus", "Numa Pompilius", "Tullus Hostilius", "Ancus Marcius", "Lucius Taquinius", "Servius Tullius", "Lucius Superbus"));
         System.out.println(kingsOfRome);
         String[] kingsOfRomeArray = kingsOfRome.toArray(new String[0]);
+        kingsOfRomeArray[6] = "Lucius Tarquinius Supercar";
+        System.out.println(Arrays.toString(kingsOfRomeArray));
 
     }
 
